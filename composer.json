@@ -5,7 +5,7 @@
     "keywords": ["amazon", "mws", "api", "library"],
     "homepage": "https://github.com/maxs94/amazon-mws",
     "license": "MIT",
-    "version": "0.1",
+    "version": "1.0",
     "authors": [
         {
             "name": "Markus Steindl",
