@@ -143,14 +143,14 @@ $action->addParameter(new FeesEstimateRequestList([$feesEstimateRequest]));
 $results = $amazonClient->setAction($action)->submitFeed();
 ```
 
-# GetOrder 
+## GetOrder 
 ```php 
 $action = new GetOrder();
 $action->addParameter( new AmazonOrderId(['123-1234567-1234567']));
 $results = $amazonClient->setAction($action)->submitFeed();
 ```
 
-# SubmitFeed - add products 
+## SubmitFeed - add products 
 ```php 
 $action = new SubmitFeed();
 $action->addParameter(new FeedType( FeedType::PRODUCT ));
@@ -190,7 +190,7 @@ $action->addData($products);
 $results = $amazonClient->setAction($action)->submitFeed();
 ``` 
 
-# GetFeedSubmissionList - get all submitted product feeds status from Amazon
+## GetFeedSubmissionList - get all submitted product feeds status from Amazon
 ```php 
 $action = new GetFeedSubmissionList();  // this optionally takes an array of feedSubmissionIds
 $results = $amazonClient->setAction($action)->submitFeed();
@@ -204,8 +204,8 @@ foreach ($results->GetFeedSubmissionListResult->FeedSubmissionInfo as $result) {
         $results = $this->amazon->setAction($action)->submitFeed();
         print_r($results);
     }
-}
 
+}
 ```
 
 
