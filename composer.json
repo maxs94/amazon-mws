@@ -1,0 +1,44 @@
+{
+    "name": "maxs94/amazon-mws",
+    "type": "library",
+    "description": "Amazon MWS API Library",
+    "keywords": ["amazon", "mws", "api", "library"],
+    "homepage": "https://github.com/maxs94/amazon-mws",
+    "license": "MIT",
+    "version": "0.1",
+    "authors": [
+        {
+            "name": "Markus Steindl",
+            "email": "info@markus-steindl.de",
+            "homepage": "https://markus-steindl.de",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=7.2.5",
+        "mashape/unirest-php": "^3.0",
+        "twig/twig": "^3",
+        "goetas-webservices/xsd-reader": "^0.3.7"
+    },
+    "require-dev": {
+        "psr/container": "^1.0",
+        "symfony/phpunit-bridge": "^4.4.9|^5.0.9",
+        "phpunit/phpunit": "^8"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ],
+        "psr-4": {
+            "Maxs94\\AmazonMws\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "src/"
+        ],
+        "psr-4": {
+            "Maxs94\\AmazonMws\\Tests\\": "tests"
+        }
+    }
+}
